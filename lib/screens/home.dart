@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
-class BaglanScreen extends StatelessWidget {
+class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     body: Container(child: Center(child: Text("SanoTimer")),),
+      body: Center(child: Text("Tebrikler Bağlantı başarılı...")),
+      
     );
   }
 }

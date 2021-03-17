@@ -8,6 +8,23 @@ class BaglanScreen extends StatelessWidget {
     //Boyut değiştirirken kulanılan değişken _size
     final _size = MediaQuery.of(context).size;
     return Scaffold(
+      backgroundColor: Color(0xFFFAF6F2),
+      appBar: AppBar(
+          toolbarHeight: 70,
+          backgroundColor: Color(0xFFEDD3C1),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(25),
+              bottomRight: Radius.circular(25),
+            ),
+          ),
+          title:  Text(
+              "SanoTimer",
+              style: TextStyle(color: Colors.black, fontSize: _size.width*0.1),
+            ),
+            centerTitle: true,
+          
+        ),
       body: Stack(
         children: [
           Center(
@@ -25,7 +42,7 @@ class BaglanScreen extends StatelessWidget {
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: _size.height * 0.023),
+                          fontSize: _size.width * 0.035,),
                     ),
                   ),
                 ),

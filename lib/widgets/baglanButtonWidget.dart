@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import '../Screens/home.dart';
-import 'alertDialogWidget.dart';
+import 'package:sanotimer/screens/homeScreen.dart';
+
+import 'alertDialogBaglantiWidget.dart';
 
 class BaglanButton extends StatelessWidget {
   const BaglanButton({
@@ -26,7 +27,7 @@ class BaglanButton extends StatelessWidget {
         } else if (bluetooth == false) {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => AlertDialogWidget()),
+            MaterialPageRoute(builder: (context) => AlertDialogBaglatiWidget()),
           );
         }
       },

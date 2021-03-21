@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class ManuelAyarlamaScreen extends StatelessWidget {
+class TarihZamanScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final _size = MediaQuery.of(context).size;
@@ -29,7 +29,7 @@ class ManuelAyarlamaScreen extends StatelessWidget {
               keyboardType: TextInputType.number,
               cursorColor: Colors.black,
               decoration: InputDecoration(
-                labelText: "Vana No: ",
+                labelText: "GG/AA/YYYY ",
                 labelStyle: TextStyle(fontSize: 20.0, color: Colors.black),
                 enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.black),
@@ -41,7 +41,7 @@ class ManuelAyarlamaScreen extends StatelessWidget {
             padding: const EdgeInsets.all(50.0),
             child: TextFormField(
               decoration: InputDecoration(
-                labelText: "Süre: ",
+                labelText: "SS:DD",
                 labelStyle: TextStyle(fontSize: 20.0, color: Colors.black),
                 enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.black),

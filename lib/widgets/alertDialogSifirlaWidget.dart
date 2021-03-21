@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sanotimer/screens/homeScreen.dart';
 
 import 'alertDialogSifirlandi.dart';
 
@@ -10,20 +11,21 @@ class AlertDialogSifirlaWidget extends StatelessWidget {
       child: AlertDialog(
         title: Text("Tüm verileriniz sıfırlanacaktır."),
         content: Text('Sıfırlama işleminden emin misiniz?'),
-
         actions: [
-          
           TextButton(
             child: Text("Evet"),
             onPressed: () {
-              Navigator.push(context, MaterialPageRoute(
-                            builder: (context) => AlertDialogSifirlandiWidget()));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => AlertDialogSifirlandiWidget()));
             },
           ),
           TextButton(
             child: Text("Hayır"),
             onPressed: () {
-              Navigator.of(context).pop();
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => HomeScreen()));
             },
           ),
         ],

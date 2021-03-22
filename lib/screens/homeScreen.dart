@@ -7,8 +7,11 @@ import 'package:sanotimer/widgets/alertDialogSifirlaWidget.dart';
 import 'package:sanotimer/widgets/alertDialogUyariWidget.dart';
 import 'baslamaZamaniScreen.dart';
 import 'manuelAyarlamaScreen.dart';
+import 'package:flutter_bluetooth_serial/flutter_bluetooth_serial.dart';
 
 class HomeScreen extends StatelessWidget {
+  final BluetoothDevice server;
+  const HomeScreen({this.server});
   @override
   Widget build(BuildContext context) {
     final _size = MediaQuery.of(context).size;

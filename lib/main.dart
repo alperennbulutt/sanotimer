@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bluetooth_serial/flutter_bluetooth_serial.dart';
-import 'package:sanotimer/screens/mainScreen.dart';
+import 'package:sanotimer/screens/homeScreen.dart';
 import 'package:sanotimer/baglan.dart';
 
 void main() {
@@ -65,7 +65,7 @@ class Home extends StatelessWidget {
             context,
             MaterialPageRoute(
               builder: (context) {
-                return SanoTimerApp(server: device);
+                return HomeScreen(server: device);
               },
             ),
           );
